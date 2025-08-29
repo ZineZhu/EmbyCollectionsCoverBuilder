@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-build_collections_poster_from_nfo_log.py
+EmbyCollectionsCoverBuilder.py
 
 特性总览（含本次更新）：
 - GUI 交互：选择扫描根目录 → 选择 set（仅显示≥2部）→ 选择输出根目录
 - 视频→NFO：同名 .nfo 优先，找不到回退 movie.nfo
 - <set> 兼容：支持 <set ...>，优先 <name>；无 <name> 兜底提取
 - 封面查找：以“视频文件”为中心优先匹配同名图片；再找预设名；再模糊（含视频名/含 poster/取最大）
-- 合集海报：竖版 400×600，2×2 无边框；≥4 随机取 4；==2 时为 A,B,A,B；<2 允许重复补足到 4
+- 合集海报：竖版 400×600，2×2 无边框；≥4 随机取 4；==2 时为 A,B,B,A；<2 允许重复补足到 4
 - 输出路径：<选择的输出根目录>\collections\<合集名称>\auto_poster_<合集名称>.jpg
 - CSV 编码：UTF-8（带 BOM）以便 Excel 直接打开不乱码（encoding="utf-8-sig"）
 - 名称清洗：非法字符替换为“空格”，并压缩连续空格（避免下划线）
@@ -659,3 +659,4 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print("\n已中断。")
         sys.exit(130)
+
