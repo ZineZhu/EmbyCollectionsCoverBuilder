@@ -3,7 +3,7 @@
 ## Tool Overview
 
 This is a Python script tool designed to scan media libraries and automatically generate collection posters. It analyzes NFO metadata of video files, identifies films belonging to the same collection, and creates professional vertical 2×2 collage posters (400×600 pixels).
-The initial development was motivated by Emby's inconsistent ability to generate collection posters for media libraries scraped using [JavSP](https://github.com/Yuukiy/JavSP/)
+The initial development was motivated by Emby's inconsistent ability to generate collection posters for media libraries scraped using [JavSP](https://github.com/Yuukiy/JavSP/).
 
 ## Key Features
 
@@ -100,3 +100,4 @@ pip install pillow
 - Creating unified cover posters for movie collections
 
 - Media library metadata analysis and export
+
