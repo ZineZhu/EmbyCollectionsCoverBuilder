@@ -43,7 +43,7 @@ python main.py --root <媒体库路径> --out-dir <输出路径> --no-gui
 
 ### 1. CSV报告文件
 
-在输出目录的`collections/_csv/`子文件夹中生成两个CSV文件：
+在输出目录的`collections/_csv/`子文件夹中生成两个CSV文件（无实质作用，可用于后期核验）：
 
 - `set_rec.csv` - 原始扫描数据
 - `set_rec_sort.csv` - 按合集名称、年份和标题排序的数据
@@ -88,7 +88,7 @@ pip install pillow
 1. NFO文件支持：优先使用`<视频文件名>.nfo`，找不到时使用`movie.nfo`
 2. 合集识别：支持`<set>`标签，优先提取`<name>`子标签内容
 3. 海报查找策略（按优先级）：
- - 同名图片文件
+ - 视频文件同名图片文件
  - 预设名称（poster.jpg, folder.jpg等）
  - 包含视频名称关键词的图片
  - 名称包含"poster"的图片
@@ -101,5 +101,6 @@ pip install pillow
 - 批量整理媒体库中的系列影片
 - 为电影合集创建统一的封面海报
 - 媒体库元数据分析和导出
+
 
 
